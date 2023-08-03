@@ -1,0 +1,35 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/style/bootstrap.min.css" />
+		<link rel="stylesheet" href="/style/style.css" />
+		<link href="icon.png" rel="Weather App icon"  type="image/x-icon">
+		<title>Weather App with nodejs</title>
+	</head>
+	<body>
+
+		<div>{{>header}}</div>
+		
+		<div class="container">
+			<div class="d-flex align-item-center vh-100">
+				<div class="card text-white">
+					<div class="card-body">
+						<h5 class="card-title">Weather Page</h5>
+						<hr />
+						<h4 class="card-text">lat <span class="text-warning">{{latitude}}</span></h4>
+						<h4 class="card-text">long <span class="text-warning">{{longitude}}</span></h4>
+						<h4 class="card-text my-4">
+							<span class="text-warning">{{country}}</span>
+							now is
+							<span class="text-warning">{{status}}</span>
+							and temperature is
+							<span class="text-warning">{{temp}}&#8451;</span>
+						</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

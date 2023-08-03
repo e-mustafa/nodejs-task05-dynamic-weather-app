@@ -1,0 +1,56 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/style/bootstrap.min.css" />
+		<link rel="stylesheet" href="/style/style.css" />
+		<title>Weather App with nodejs</title>
+		<link href="/images/icon.png" rel="Weather App icon" type="image/x-icon" />
+	</head>
+	<body>
+		<div>{{>header}}</div>
+
+		<div class="container">
+			<div class="d-flex align-item-center vh-100">
+				<div class="card text-white">
+					<div class="card-body">
+						<h5 class="card-title">Weather Page</h5>
+						<hr />
+
+						<div class="forecastInfo">
+
+							<div class="d-flex justify-content-around">
+								<div>
+
+									<span id="temp_p" class="text-warning fs-4 fw-bold"></span>
+									&#8451;
+									<h4
+										id="forecast_p"
+										class="text-warning text-center card-text my-4"
+									></h4>
+									
+									
+									
+								</div>
+									<img id="icon_p" src="" alt="" width="120" />
+
+							</div>
+<h6>
+										<span id="city_p" class="text-warning"></span>,
+										<span id="country_p" class="text-warning"></span>
+									</h6>
+							<hr />
+							<div class="latitude"></div>
+
+						</div>
+
+						<h5 id="error_p">Enter location to show weather</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="/js/script.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
